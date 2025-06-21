@@ -1,25 +1,15 @@
-import { useState } from "react";
-import "./App.css";
+import Apifetch from "./components/fetch/Task2";
+import Condtition from "./components/conditionrender/Cnrender";
+import Api from "./components/fetch/Api";
+import Useref from "./components/Hooks/useref";
+import Country from "./components/PropDrilling/Drill";
+import PreviousCount from "./components/Using3";
 
 function App() {
-  const [bgColor, setColor] = useState("white");
-
-  const clicked = () => {
-    return setColor((current) => (current === "white" ? "black" : "white"));
-  };
-
   return (
-    <div
-      style={{
-        backgroundColor: bgColor,
-        height: "100vh",
-        justifyContent: "center",
-        alignItems: "center",
-        display: "flex",
-      }}
-    >
-      <button onClick={clicked}>Switch Theme</button>
-    </div>
+    
+   <Apifetch/>
+    
   );
 }
 
